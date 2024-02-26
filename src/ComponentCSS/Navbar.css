@@ -1,93 +1,104 @@
-.logoName{
-    font-size: 1.5rem;
-    font-weight: 500
-    ;
+.logoName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(170, 81, 253);
 }
-.display_Nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: rgb(187, 187, 187);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 0 10px;
+.display_Nav {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-.display_Nav .navItems{
-    display: flex;
-    width: 550px;
-    /* background-color: aqua; */
-    justify-content: space-around;
-    align-items: center;
+.display_Nav .navItems {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
 }
-.navName{
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 10px 29px;
-    /* gap:25px; */
-    transition: all .15s ease-out;
+.navName {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 10px 29px;
+  transition: all 0.15s ease-out;
+  color: white;
 }
-.navName:hover{
-  border-radius: 30px;
-  background-color: rgb(165, 162, 162);
+.navName:hover {
+  border-radius: 0 0 0 30px;
+  background-color: rgb(31, 30, 30);
 }
-.navName.active{
-    font-weight: 700;
-    /* background-color: rgb(160, 159, 159); */
+.navName.active {
+  font-weight: 700;
+  /* background-color: rgb(160, 159, 159); */
 }
-.mblNav{
+.mblNav {
+  display: none;
+}
+.btn {
+  margin: 10px;
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .btn {
     display: none;
-}
-@media (max-width:900px){
-    .logoName{
-        font-size: 1.3rem;
-        color: #61166b;
-    }
-    .display_Nav{
+  }
+  .logoName {
+    font-size: 1.3rem;
+    color: #c273f7;
+  }
+  .display_Nav {
+    padding: 15px 10px;
+  }
+  .display_Nav .navItems {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 75px;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 15px 15px rgba(54, 54, 54, 0.425);
+  }
 
-padding: 15px 4px;
+  .clickOnNavs {
+    display: none;
+  }
 
-    }
-    .display_Nav .navItems{
-       position: absolute;
-       flex-direction: column;
-       width: 100%;
-       top: 75px;
-       left: 0;
-       background-color:rgb(188, 188, 189);
-       box-shadow: 0px 15px 15px rgba(54, 54, 54, 0.425);
+  .navItem {
+    text-align: center;
+    width: 300px;
+    padding: 12px 0px;
+    margin: 20px 0px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.199);
+    font-size: 1.1rem;
+    font-weight: 500;
+    /* display: none; */
+  }
+  .navItem.active {
+    font-weight: 800;
+    background-color: rgb(100, 99, 99);
+  }
 
-    }
+  .mblNav {
+    display: block;
+    padding-top: 2px;
+  }
+  .NavIcon {
+    width: 40px;
 
-    .clickOnNavs{
-        display: none;
-    }
-
-    .navItem{
-        text-align: center;
-        width: 300px;
-        padding: 12px 0px;
-        margin: 20px 0px;
-        background-color: rgb(171, 171, 175);
-        border-radius: 20px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.199);
-        font-size: 1.1rem;
-        font-weight: 500;
-        /* display: none; */
-    }
-    .navItem.active{
-        font-weight: 800;
-        background-color: rgb(160, 159, 159);
-    }
-
-    .mblNav{
-        display: block;
-        padding-top:2px ;
-    }
-    .NavIcon{
-        width: 40px;
-    }
+    filter: invert(59%) sepia(73%) saturate(2848%) hue-rotate(230deg) brightness(97%) contrast(99%)
+  }
 }

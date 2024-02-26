@@ -1,22 +1,23 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
     <>
-    <div className='display_Nav'>
+      <nav className="display_Nav">
         <div className="logoName">
-            <h3 className='logoName'>The Commercian Classroom </h3>
+          <h3 className="logoName">CodeWithInz@</h3>
         </div>
         <div className="navItems">
-           <NavLink className = {` navName ${props.navItem}`} onClick={props.displayNone} to="/">HOME</NavLink>
-           <NavLink className = {` navName ${props.navItem}`} onClick={props.displayNone} to="/About">ABOUT US</NavLink>
-           <NavLink className = {` navName ${props.navItem}`} onClick={props.displayNone} to="/Contact">CONTACT</NavLink>
+          <NavLink className={` navName ${props.navItem}`} onClick={props.displayNone} to="/">HOME</NavLink>
+          <NavLink className={` navName ${props.navItem}`}onClick={props.displayNone}to="/About">ABOUT US</NavLink>
+          <NavLink className={` navName ${props.navItem}`} onClick={props.displayNone} to="/contact">CONTACT</NavLink>
+          <button className="btn">Log in</button>
         </div>
-        <div className='mblNav'>
-            <img className="NavIcon" onClick={props.clickNavIcon} src={props.navIcon} onalt="" />
+        <div className="mblNav">
+          <img className="NavIcon" onClick={props.clickNavIcon} src={props.navIcon} onalt="" />
         </div>
-    </div>
+      </nav>
     </>
-  )
+  );
 }
